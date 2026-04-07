@@ -1,19 +1,18 @@
 {
-	"name": "n8n-nodes-<...>",
+	"name": "@erdodocomp/n8n-nodes-playwright",
 	"version": "0.1.0",
-	"description": "",
+	"description": "n8n nodes for browser automation with Playwright - navigate, click, type, extract data, and monitor network requests with anti-bot stealth protection",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "erdoganyesil"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/erdoganyesil/n8n-nodes-playwright.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
@@ -36,7 +35,10 @@
 		],
 		"nodes": [
 			"dist/nodes/GithubIssues/GithubIssues.node.js",
-			"dist/nodes/Example/Example.node.js"
+			"dist/nodes/Example/Example.node.js",
+			"dist/nodes/Playwright/PlaywrightBrowser.node.js",
+			"dist/nodes/Playwright/PlaywrightPage.node.js",
+			"dist/nodes/Playwright/PlaywrightNetwork.node.js"
 		]
 	},
 	"devDependencies": {
@@ -45,6 +47,11 @@
 		"prettier": "3.8.1",
 		"release-it": "19.2.4",
 		"typescript": "5.9.3"
+	},
+	"dependencies": {
+		"playwright-core": "^1.42.0",
+		"playwright-extra": "^4.3.6",
+		"puppeteer-extra-plugin-stealth": "^2.11.2"
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
