@@ -1,5 +1,5 @@
 {
-	"name": "@erdodocomp/n8n-nodes-playwright",
+	"name": "n8n-nodes-playwright-automation",
 	"version": "0.1.0",
 	"description": "n8n nodes for browser automation with Playwright - navigate, click, type, extract data, and monitor network requests with anti-bot stealth protection",
 	"license": "MIT",
